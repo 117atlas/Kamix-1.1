@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".kamixui.fragments.TransactionDetailsFragment"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <TextView
+                android:id="@+id/transaction_details_header"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/transfert_details_label"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#99000000"
+                android:textSize="16sp"
+                android:text="@string/transaction_details_message"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="4dp"
+                android:gravity="center_horizontal"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_marginTop="8dp"
+                android:id="@+id/receiver_container"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    android:text="@string/receiver_label"
+                    android:textColor="@color/gray_text_profile"
+                    android:textSize="18dp"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/receiver_label"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    style="@style/signin_edittext_style"
+                    android:layout_height="wrap_content"
+                    android:minHeight="45dp"
+                    android:padding="5dp"
+                    android:hint="First name"
+                    android:text="Justin Bienvenu"
+                    android:gravity="center"
+                    android:id="@+id/receiver"
+                    android:focusable="false"
+                    android:singleLine="false"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="12dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="4dp"
+                android:weightSum="1"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/amount_label"
+                    android:textColor="@color/gray_text_profile"
+                    android:textSize="18dp"
+                    android:paddingLeft="8dp"
+                    android:id="@+id/amount_label"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+                    android:text="50 000 XAF"
+                    android:id="@+id/amount"
+                    android:gravity="center"
+                    android:focusable="false"
+                    android:singleLine="false"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="12dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="4dp"
+                android:weightSum="1"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fees_label"
+                    android:textColor="@color/gray_text_profile"
+                    android:textSize="18dp"
+                    android:paddingLeft="8dp"
+                    android:id="@+id/fees_label"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+                    android:text="1 000 XAF"
+                    android:id="@+id/fees"
+                    android:gravity="center"
+                    android:focusable="false"
+                    android:singleLine="false"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="12dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="4dp"
+                android:weightSum="1"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/total_label"
+                    android:textColor="@color/gray_text_profile"
+                    android:textSize="18dp"
+                    android:paddingLeft="8dp"
+                    android:id="@+id/total_label"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+                    android:text="51 000 XAF"
+                    android:id="@+id/total"
+                    android:gravity="center"
+                    android:focusable="false"
+                    android:singleLine="false"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_marginLeft="12dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:id="@+id/mobile_money_container"
+                android:layout_marginTop="8dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:maxWidth="120dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    android:text="@string/mobile_money_label"
+                    android:gravity="left"
+                    android:textColor="@color/gray_text_profile"
+                    android:textSize="18dp"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/mobile_noney_label"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    style="@style/signin_edittext_style"
+                    android:layout_height="45dp"
+                    android:padding="5dp"
+                    android:hint="First name"
+                    android:text="+237 697266488"
+                    android:gravity="center"
+                    android:id="@+id/mobile_noney"
+                    android:focusable="false"
+                    android:singleLine="false"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="12dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.80"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="@string/message_label"
+                android:textColor="@color/gray_text_profile"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#CC000000"
+                android:textStyle="italic"
+                android:text="This a transaction message test example for debug app kamix"
+                android:textSize="16sp"
+                android:id="@+id/transaction_message"
+                android:layout_marginTop="1dp"
+                android:gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#99000000"
+                android:textStyle="italic"
+                android:textSize="16sp"
+                android:text="@string/transaction_details_message"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="8dp">
+
+                <android.support.v7.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+                    android:text="@string/cancel"
+                    android:id="@+id/cancel"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginRight="8dp"/>
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/proceed"
+                    android:layout_width="wrap_content"
+                    android:paddingRight="12dp"
+                    android:paddingLeft="12dp"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/proceed"
+                    android:layout_marginRight="12dp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".kamixui.activities.ScanQRCodeActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/toolbar"
+            app:title="@string/scan_qr_code_title"
+            app:navigationIcon="@drawable/ic_nav_arrow_back"
+            app:titleTextColor="@color/white"></android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <me.dm7.barcodescanner.zbar.ZBarScannerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/zbQr">
+
+        </me.dm7.barcodescanner.zbar.ZBarScannerView>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
